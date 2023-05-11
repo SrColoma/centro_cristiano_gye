@@ -1,5 +1,5 @@
-import 'package:centro_cristiano_gye/components/CustomAppBar.dart';
-import 'package:centro_cristiano_gye/components/CustomNavigationBar.dart';
+import 'package:centro_cristiano_gye/components/navigations/CustomAppBar.dart';
+import 'package:centro_cristiano_gye/components/navigations/CustomNavigationBar.dart';
 import 'package:centro_cristiano_gye/providers/MainNavigationIndexProvider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

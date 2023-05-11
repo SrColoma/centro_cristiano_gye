@@ -1,3 +1,4 @@
+import 'package:centro_cristiano_gye/pages/DonarPage.dart';
 import 'package:centro_cristiano_gye/pages/LoginPage.dart';
 import 'package:centro_cristiano_gye/pages/MainPage.dart';
 import 'package:centro_cristiano_gye/providers/MainNavigationIndexProvider.dart';
@@ -34,8 +35,9 @@ class MyApp extends StatelessWidget {
       title: 'Iglecia Centro Cristiano GYE',
       initialRoute: MainPage.routeName,
       routes: {
-        MainPage.routeName          : (context) => MainPage(),
-        LoginPage.routeName          : (context) => LoginPage(),
+        MainPage.routeName  : (context) => MainPage(),
+        LoginPage.routeName : (context) => LoginPage(),
+        DonarPage.routeName :(context) => DonarPage(),
       },
     );
   }

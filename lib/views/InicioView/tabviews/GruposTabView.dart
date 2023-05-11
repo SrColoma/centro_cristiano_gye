@@ -1,4 +1,4 @@
-import 'package:centro_cristiano_gye/components/CustomCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomCard.dart';
 import 'package:flutter/material.dart';
 
 class GruposTabView extends StatelessWidget {
@@ -21,18 +21,21 @@ class GruposTabView extends StatelessWidget {
             imagen: imagenes[0],
             titulo: "Tierra prometida",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           CustomCard(
             imagen: imagenes[1],
             titulo: "Piroforia",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           CustomCard(
             imagen: imagenes[2],
             titulo: "Mosaico",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           
@@ -40,6 +43,7 @@ class GruposTabView extends StatelessWidget {
             imagen: imagenes[3],
             titulo: "Fusionados",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
 
@@ -47,6 +51,7 @@ class GruposTabView extends StatelessWidget {
             imagen: imagenes[4],
             titulo: "Grupos pequeños",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
 

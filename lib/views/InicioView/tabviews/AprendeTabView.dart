@@ -1,4 +1,4 @@
-import 'package:centro_cristiano_gye/components/CustomCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomCard.dart';
 import 'package:flutter/material.dart';
 
 class AprendeTabView extends StatelessWidget {
@@ -21,18 +21,21 @@ class AprendeTabView extends StatelessWidget {
             imagen: imagenes[0],
             titulo: "Crecimiento y cambio",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           CustomCard(
             imagen: imagenes[1],
             titulo: "Cursos en pareja",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           CustomCard(
             imagen: imagenes[2],
             titulo: "Global University",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           
@@ -40,6 +43,7 @@ class AprendeTabView extends StatelessWidget {
             imagen: imagenes[3],
             titulo: "ITSLC",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
 
@@ -47,6 +51,7 @@ class AprendeTabView extends StatelessWidget {
             imagen: imagenes[4],
             titulo: "Unidad Educativa LCG",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
 

@@ -17,10 +17,15 @@ ThemeData getGlobalThemeData(){
       // error: Colors.black,
       onPrimary: Colors.black,
       onSecondary: Colors.black,
-      // onSurface: Colors.black,
+      onSurface: Colors.white,
       onBackground: Colors.white38,
       onError: Colors.black,
       brightness: Brightness.dark,
+    ),
+
+    bottomSheetTheme: BottomSheetThemeData(
+      backgroundColor: Colors.grey[900],
+
     ),
 
     tabBarTheme: TabBarTheme(

@@ -1,5 +1,6 @@
-import 'package:centro_cristiano_gye/components/CustomImageCard.dart';
-import 'package:centro_cristiano_gye/components/CustomShortCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomImageCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomShortCard.dart';
+import 'package:centro_cristiano_gye/views/InicioView/tabviews/DonarTabView.dart';
 import 'package:flutter/material.dart';
 
 class DonarView extends StatelessWidget {
@@ -7,37 +8,10 @@ class DonarView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // return DonarTabView();
     return CustomScrollView(
       slivers: [
-        SliverToBoxAdapter(
-          child: DefaultTabController(
-            length: 2,
-            child: TabBar(
-              indicatorColor: Colors.white,
-              labelColor: Colors.white,
-              unselectedLabelColor: Colors.grey,
-              tabs: [
-                Tab(
-                  text: "Donativos",
-                ),
-                Tab(
-                  text: "Paypal",
-                ),
-              ],
-            ),
-          ),
-        ),
-        SliverList(
-          delegate: SliverChildListDelegate(
-            [
-              CustomImageCard(),
-              CustomImageCard(),
-              CustomImageCard(),
-              CustomImageCard(),
-              CustomImageCard(),
-            ]
-          )
-        )
+        DonarTabView(),
       ],
     );
   }

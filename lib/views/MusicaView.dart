@@ -1,5 +1,5 @@
-import 'package:centro_cristiano_gye/components/CustomMusicCard.dart';
-import 'package:centro_cristiano_gye/components/CustomShortCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomMusicCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomShortCard.dart';
 import 'package:flutter/material.dart';
 
 class MusicaView extends StatelessWidget {

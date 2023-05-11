@@ -1,4 +1,4 @@
-import 'package:centro_cristiano_gye/components/CustomShortCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomShortCard.dart';
 import 'package:flutter/material.dart';
 
 class MensajesView extends StatelessWidget {

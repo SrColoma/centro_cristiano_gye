@@ -1,4 +1,4 @@
-import 'package:centro_cristiano_gye/components/CustomCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomCard.dart';
 import 'package:flutter/material.dart';
 
 class DonarTabView extends StatelessWidget {
@@ -45,7 +45,7 @@ class DonarTabView extends StatelessWidget {
             ),
 
 
-            SizedBox.square(dimension: 20,),
+            SizedBox.square(dimension: 10,),
             Text("Donativos para el Campus:"),
             SizedBox.square(dimension: 10,),
             
@@ -72,7 +72,7 @@ class DonarTabView extends StatelessWidget {
               ],
             ),
 
-            SizedBox.square(dimension: 20,),
+            SizedBox.square(dimension: 10,),
             Text("Motivo de la donación:"),
             SizedBox.square(dimension: 10,),
 
@@ -94,16 +94,12 @@ class DonarTabView extends StatelessWidget {
               ],
             ),
 
-            SizedBox.square(dimension: 20,),
+            SizedBox.square(dimension: 10,),
 
             Text("Donar cada:"),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                ActionChip(
-                  label: Text("Mes"),
-                  onPressed: () {},
-                ),
                 ActionChip(
                   label: Text("Semana"),
                   onPressed: () {},
@@ -112,9 +108,30 @@ class DonarTabView extends StatelessWidget {
                   label: Text("Quincena"),
                   onPressed: () {},
                 ),
+                ActionChip(
+                  label: Text("Mes"),
+                  onPressed: () {},
+                ),
+                ActionChip(
+                  label: Text("Año"),
+                  onPressed: () {},
+                ),
               ],
+            ),
+            SizedBox.square(dimension: 10,),
+            Center(
+              child: FilledButton.icon(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                  foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                ),
+                icon: Icon(Icons.arrow_forward),
+                label: Text("Continuar"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/donar');
+                },
+              ),
             )
-
 
           ]
         ),

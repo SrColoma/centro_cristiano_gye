@@ -4,12 +4,14 @@ class CustomCard extends StatelessWidget {
   final String imagen;
   final String titulo;
   final String subtitulo;
+  final VoidCallback? onTap;
 
   CustomCard({
     Key? key,
     required this.imagen,
     required this.titulo,
     required this.subtitulo,
+    required this.onTap,
   }):super(key: key);
 
   @override
@@ -37,9 +39,7 @@ class CustomCard extends StatelessWidget {
             ),
           ],
         ),
-        onTap: () {
-          print("Card tapped.");
-        },
+        onTap: onTap,
       ),
     );
   }

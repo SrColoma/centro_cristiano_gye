@@ -1,5 +1,5 @@
-import 'package:centro_cristiano_gye/components/CustomCard.dart';
-import 'package:centro_cristiano_gye/components/CustomImageCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomImageCard.dart';
 import 'package:flutter/material.dart';
 
 class CursosTabView extends StatelessWidget {

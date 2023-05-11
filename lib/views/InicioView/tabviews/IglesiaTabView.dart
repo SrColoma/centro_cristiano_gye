@@ -1,4 +1,4 @@
-import 'package:centro_cristiano_gye/components/CustomCard.dart';
+import 'package:centro_cristiano_gye/components/cards/CustomCard.dart';
 import 'package:flutter/material.dart';
 
 class IglesiaTabView extends StatelessWidget {
@@ -21,18 +21,23 @@ class IglesiaTabView extends StatelessWidget {
             imagen: imagenes[0],
             titulo: "Culto en linea",
             subtitulo: "",
+            onTap: ()=>{
+              print("Culto en linea")
+            },
           
           ),
           CustomCard(
             imagen: imagenes[1],
             titulo: "Noticias",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           CustomCard(
             imagen: imagenes[2],
             titulo: "Oracion",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
           
@@ -40,6 +45,7 @@ class IglesiaTabView extends StatelessWidget {
             imagen: imagenes[3],
             titulo: "Devocional",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
 
@@ -47,6 +53,7 @@ class IglesiaTabView extends StatelessWidget {
             imagen: imagenes[4],
             titulo: "Crecimiento y cambio",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
 
@@ -54,6 +61,7 @@ class IglesiaTabView extends StatelessWidget {
             imagen: imagenes[5],
             titulo: "Grupos pequeños",
             subtitulo: "",
+            onTap: ()=>{},
           
           ),
         ],
