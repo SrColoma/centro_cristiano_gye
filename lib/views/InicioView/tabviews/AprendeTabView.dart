@@ -14,49 +14,47 @@ class AprendeTabView extends StatelessWidget {
       "https://aulavirtualec.net/wp-content/uploads/Instituto-Superior-Tecnologico-Liceo-Cristiano-2.webp",
       "https://aulavirtualec.net/wp-content/uploads/Instituto-Superior-Tecnologico-Liceo-Cristiano-2.webp"
     ];
-    return SliverList(
-      delegate: SliverChildListDelegate(
-        [
-          CustomCard(
-            imagen: imagenes[0],
-            titulo: "Crecimiento y cambio",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          CustomCard(
-            imagen: imagenes[1],
-            titulo: "Cursos en pareja",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          CustomCard(
-            imagen: imagenes[2],
-            titulo: "Global University",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          
-          CustomCard(
-            imagen: imagenes[3],
-            titulo: "ITSLC",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
+    return ListView(
+      children:[
+        CustomCard(
+          imagen: imagenes[0],
+          titulo: "Crecimiento y cambio",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        CustomCard(
+          imagen: imagenes[1],
+          titulo: "Cursos en pareja",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        CustomCard(
+          imagen: imagenes[2],
+          titulo: "Global University",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        
+        CustomCard(
+          imagen: imagenes[3],
+          titulo: "ITSLC",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
 
-          CustomCard(
-            imagen: imagenes[4],
-            titulo: "Unidad Educativa LCG",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
+        CustomCard(
+          imagen: imagenes[4],
+          titulo: "Unidad Educativa LCG",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
 
-        ],
-      ),
+      ],
     );
   }
 }

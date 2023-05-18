@@ -26,11 +26,21 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         
         IconButton(
-          icon: Icon(Icons.notifications),
+          // icon: Icon(Icons.notifications),
+          icon: ImageIcon(
+            NetworkImage('https://i.gifer.com/XiPv.gif'),
+            color: Colors.white,
+            // size: 40,
+          ),
           onPressed: () {},
         ),
         IconButton(
-          icon: Icon(Icons.person),
+          // icon: Icon(Icons.person),
+          icon: ImageIcon(
+            NetworkImage('https://i.gifer.com/6ks.gif'),
+            color: Colors.white,
+            // size: 40,
+          ),
           onPressed: () {
             Navigator.pushNamed(context, LoginPage.routeName);
           },

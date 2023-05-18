@@ -6,7 +6,6 @@ import 'package:centro_cristiano_gye/themes/GlobalThemeData.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'views/InicioView/providers/InicioNavigationIndexProvider.dart';
 
 // void main() => runApp(const MyApp());
 void main() async{
@@ -15,7 +14,6 @@ void main() async{
     MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => MainNavigationIndexProvider()),
-          ChangeNotifierProvider(create: (_) => InicioNavigationIndexProvider()),
         ],
         child: const MyApp(),
       ),

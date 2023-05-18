@@ -8,11 +8,11 @@ class DonarView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return DonarTabView();
-    return CustomScrollView(
-      slivers: [
-        DonarTabView(),
-      ],
-    );
+    return DonarTabView();
+    // return CustomScrollView(
+    //   slivers: [
+    //     DonarTabView(),
+    //   ],
+    // );
   }
 }

@@ -34,8 +34,21 @@ class CustomNavigationBar extends StatelessWidget {
             label: 'Mensajes',
           ),
           NavigationDestination(
-            icon: Icon(Icons.favorite_border),
-            selectedIcon: Icon(Icons.favorite),
+            // icon: Icon(Icons.favorite_border),
+            // icono desde una imagen network
+            icon: ImageIcon(
+              // NetworkImage('https://www.ccgye.org/wp-content/uploads/2022/01/CCG-black.png'),
+              NetworkImage('https://i.gifer.com/6mz.gif'),
+              color: Colors.white,
+              size: 30,
+            ),
+            selectedIcon: ImageIcon(
+              // NetworkImage('https://i.gifer.com/6ks.gif'),
+              // NetworkImage('https://i.gifer.com/6mz.gif'),
+              NetworkImage('https://i.gifer.com/2iFb.gif'),
+              color: Colors.white,
+              size: 40,
+            ),
             label: 'Donar',
           ),
           NavigationDestination(

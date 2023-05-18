@@ -14,49 +14,47 @@ class GruposTabView extends StatelessWidget {
       "https://cdn.pixabay.com/photo/2015/01/12/17/18/children-597471_1280.jpg",
       "https://www.signupgenius.com/cms/socialMediaImages/get-to-know-you-questions-small-groups-article-1200x800.jpg"
     ];
-    return SliverList(
-      delegate: SliverChildListDelegate(
-        [
-          CustomCard(
-            imagen: imagenes[0],
-            titulo: "Tierra prometida",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          CustomCard(
-            imagen: imagenes[1],
-            titulo: "Piroforia",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          CustomCard(
-            imagen: imagenes[2],
-            titulo: "Mosaico",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          
-          CustomCard(
-            imagen: imagenes[3],
-            titulo: "Fusionados",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
+    return ListView(
+      children:[
+        CustomCard(
+          imagen: imagenes[0],
+          titulo: "Tierra prometida",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        CustomCard(
+          imagen: imagenes[1],
+          titulo: "Piroforia",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        CustomCard(
+          imagen: imagenes[2],
+          titulo: "Mosaico",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        
+        CustomCard(
+          imagen: imagenes[3],
+          titulo: "Fusionados",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
 
-          CustomCard(
-            imagen: imagenes[4],
-            titulo: "Grupos pequeños",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
+        CustomCard(
+          imagen: imagenes[4],
+          titulo: "Grupos pequeños",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
 
-        ],
-      ),
+      ],
     );
   }
 }

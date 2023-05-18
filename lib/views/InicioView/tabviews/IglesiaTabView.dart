@@ -14,58 +14,56 @@ class IglesiaTabView extends StatelessWidget {
       "https://darrylburling.com/wp-content/uploads/2017/04/cross.png",
       "https://www.signupgenius.com/cms/socialMediaImages/get-to-know-you-questions-small-groups-article-1200x800.jpg",
     ];
-    return SliverList(
-      delegate: SliverChildListDelegate(
-        [
-          CustomCard(
-            imagen: imagenes[0],
-            titulo: "Culto en linea",
-            subtitulo: "",
-            onTap: ()=>{
-              print("Culto en linea")
-            },
-          
-          ),
-          CustomCard(
-            imagen: imagenes[1],
-            titulo: "Noticias",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          CustomCard(
-            imagen: imagenes[2],
-            titulo: "Oracion",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-          
-          CustomCard(
-            imagen: imagenes[3],
-            titulo: "Devocional",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
+    return ListView(
+      children: [
+        CustomCard(
+          imagen: imagenes[0],
+          titulo: "Culto en linea",
+          subtitulo: "",
+          onTap: ()=>{
+            print("Culto en linea")
+          },
+        
+        ),
+        CustomCard(
+          imagen: imagenes[1],
+          titulo: "Noticias",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        CustomCard(
+          imagen: imagenes[2],
+          titulo: "Oracion",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+        
+        CustomCard(
+          imagen: imagenes[3],
+          titulo: "Devocional",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
 
-          CustomCard(
-            imagen: imagenes[4],
-            titulo: "Crecimiento y cambio",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
+        CustomCard(
+          imagen: imagenes[4],
+          titulo: "Crecimiento y cambio",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
 
-          CustomCard(
-            imagen: imagenes[5],
-            titulo: "Grupos pequeños",
-            subtitulo: "",
-            onTap: ()=>{},
-          
-          ),
-        ],
-      ),
+        CustomCard(
+          imagen: imagenes[5],
+          titulo: "Grupos pequeños",
+          subtitulo: "",
+          onTap: ()=>{},
+        
+        ),
+      ],
     );
   }
 }
